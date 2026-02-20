@@ -26,8 +26,10 @@ public class DoubleLinkedList<T> implements List<T>{
 
     @Override
     public int size() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'size'");
+        if(size==Integer.MAX_VALUE){
+            return Integer.MAX_VALUE;
+        }
+        return size;
     }
 
     @Override
